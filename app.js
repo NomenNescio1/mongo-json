@@ -16,4 +16,5 @@ app.get('/products', async (req, res)=>{
     const products = await Products.find({});
     res.set('Content-Type', 'application/json');
     res.json(products);
-})
+});
+app.listen(3000, () => console.log('Listening on port 3000!'));
